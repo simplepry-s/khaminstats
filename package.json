@@ -1,0 +1,38 @@
+{
+  "name": "react-backend",
+  "engines": {
+    "node": "8.12.0"
+  },
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.417.0",
+    "body-parser": "^1.18.3",
+    "client": "0.0.1",
+    "cookie-parser": "~1.4.3",
+    "create-react-app": "^2.1.5",
+    "cron-router": "^1.0.0",
+    "dateformat": "^3.0.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "fb": "^2.0.0",
+    "hashtag-count": "^1.1.0",
+    "http-errors": "~1.6.2",
+    "instagram-profile-picture": "^1.0.5",
+    "jade": "~1.11.0",
+    "mongoose": "^5.4.14",
+    "morgan": "~1.9.0",
+    "node-cron": "^2.0.3",
+    "nodemon": "^1.18.10",
+    "pageres": "^5.0.2",
+    "path": "^0.12.7",
+    "puppeteer": "^1.13.0",
+    "request-promise": "^4.2.4",
+    "twitter": "^1.7.1",
+    "url-metadata": "^2.2.1"
+  }
+}
